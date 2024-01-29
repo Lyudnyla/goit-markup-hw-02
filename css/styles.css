@@ -39,6 +39,10 @@ color: #2E2F42;
 .nav-link:hover,
 .nav-link:focus {
     color: #404BBF;
+
+    .address{
+        font-style: normal;
+    }
 }
 .address-link {
     color: #434455;
@@ -55,7 +59,7 @@ color: #2E2F42;
 /* Hero */
 .hero-section {
     background-color: #2E2F42;
-   padding: 188px 0;
+   
 }
 .hero-title {
     color: #FFFFFF;
@@ -70,14 +74,14 @@ color: #2E2F42;
 
 
 .order-button {
-    display: block;
+   
     margin: 0 auto;
     background-color: #4D5AE5;
     color: #fff;
     border: none;
     cursor: pointer;
-    padding: 16px 32px;
-    border-radius: 4px;
+    
+   
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -144,7 +148,7 @@ color: #2E2F42;
 
 .team-item {
 background-color: #fff;
-width: 264px;
+
 }
 
 /* Section Portfolio */
@@ -178,8 +182,8 @@ letter-spacing: 0.02em;
 /* Footer */
 .footer-back {
 background-color: #2E2F42;  
-height: 312px;
-align-items: baseline;
+
+
 }
 
 .logo {
@@ -193,14 +197,11 @@ align-items: baseline;
 }
 .logo-part {
     color: #F4F4FD;
-    width: 71px;
-    height: 21px;
-    flex-direction: column;
     justify-content: center;
 }
 .text-footer {
     color: #F4F4FD;
-    width: 264px;
+    
     line-height: 1.5;
     letter-spacing: 0.02em;
 }

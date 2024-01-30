@@ -39,11 +39,12 @@ color: #2E2F42;
 .nav-link:hover,
 .nav-link:focus {
     color: #404BBF;
+     }
 
-    .address{
+    .address {
         font-style: normal;
     }
-}
+
 .address-link {
     color: #434455;
     line-height: 1.5;

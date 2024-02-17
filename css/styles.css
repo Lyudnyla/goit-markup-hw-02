@@ -7,72 +7,90 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
-}
-a {
-    text-decoration: none;
-}
-ul  {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-} 
-
-img {
-    display: block;
-}
-
-order-button {
-    font-family: inherit;
-}
-   
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-.container {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-/* Header */
-.header {
-    border-bottom: 1px solid #e7e9fc;
-    width: 1440px;
-    
  }
 
+
+p,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+    margin-top:  0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: none;   /* none . */
+    margin: 0;
+    padding: 0;
+ }
+
+a {
+    text-decoration: none;  /* none ___*/
+}
+
+button {
+    cursor: pointer;          /* рука - hand */ 
+}
+
 .container {
-    width: 1128px;
-    padding: 0 15px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;   /*  centre */  
+    outline: 3px  solid  crimson ;        
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
+  /*========================================================================================================= */
+/*========================================== HEADER ====================================================== */
+
+.header-logotype {
+    border-bottom: 1px solid #e7e9fc;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+       }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+    }
+
    
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-   }
-
 
 .logo {
-    color: #4D5AE5;
-    font-family: Raleway, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-right: 76px;
-   
-   }
+        color: #4D5AE5;
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-right: 76px;
+       }
+
 .logo-logotype {
 color: #2E2F42;
 }
@@ -80,36 +98,40 @@ color: #2E2F42;
 .nav-list {
     display: flex;
     gap: 40px;
+    }
 
-}
 .nav-link {
-    color: #2E2F42;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding: 24px 0;
-    display: block;
-   
-   
-}
+font-weight: 500;
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+color: #2e2f42;
+padding-top: 24px;
+padding-bottom: 24px;
+display: block;
+   }
+
 .nav-link:hover,
 .nav-link:focus {
     color: #404BBF;
      }
 
     .address {
-        font-style: normal;
+        font-style: normal;        /* курсивне начертання. вирівнилися букви */ 
         margin-left: auto;
      }
 
     .address-list {
         display: flex;
         gap: 40px;
+       
+      
         
     }
 
 .address-link {
     color: #434455;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     
@@ -120,72 +142,44 @@ color: #2E2F42;
     color: #404BBF;
 }
 
-.main {
-    width: 1440px;
-}
-/* Hero */
-
-
-
-.main {
-    
-   
-    
-display: block;
-margin: auto;
-}
-
+/* =======================================================================================================*/
+/* =========================================== HERO ======================================================*/
 
 .hero-section {
-  width: 1440px;
- 
+    padding-bottom: 60px;
+    padding-bottom: 60px;
+
 }
+
 .hero-container {
-    background-color: #2E2F42;
-   
-    text-align: center;
-    padding: 188px 472px;
-    
-   
-   
-}
-
-
+    background: #2e2f42;
+    padding: 186px 472px 186px 472px;
+   }
 
 .hero-text {
-    color: #FFFFFF;
-    font-weight: 700;
-    text-align: center;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    max-width: 496px;
-    padding: auto;
-
-    margin-bottom: 48px;
-    padding: 16px 32px;
-  }
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+letter-spacing: 0.02em;
+color: white;
+max-width: 496px;
+margin-bottom: 48px;
+}
    
-
-
-
-
-
-
 .order-button {
-   
+    font-family: inherit;
     margin: 0 auto;
     background-color: #4D5AE5;
     color: #fff;
     border: none;
-    cursor: pointer;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    border-radius: 4px;
     min-width: 169px;
     height: 56px;
     display: block;
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .order-button:hover,
@@ -195,21 +189,24 @@ margin: auto;
 }
     
 
+/*=======================================================================================================*/
+/*======================================= OUR ADVANTAGES =============================================== */
 
-/* Our advantage */
-.container{
-    width: 1128px;
-   
+.advantages-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+
 .advantages-container {
     display: flex;
     align-items: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
-   
     }
     
-
+    /* .ul-advantages {
+        display: flex; 
+        gap: 24px;
+        width: calc(100%-3*24px); 
+        } */
     
 .advantage-title {
 color: #2E2F42;
@@ -219,40 +216,33 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 margin-bottom: 8px;
 }
-.ul-advantages {
-    display: flex; 
-    gap: 24px;
-    width: calc(100%-3*24px); 
-    
-}
-    
 
-.li-advantages {
-  
-    
-}
-
-.paragraph-advantage {
-   
+    .paragraph-advantage {
     font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.02em;
-   
-}
+    }
 
+/*==========================================================================================================/
+ /*==================================== OUR TEAM ==========================================================*/
 
- /* Our Team */
+ .section-team {
+ padding-top: 60px;
+ }
 
  .container-team {
-    padding-top: 32px; 
-padding-bottom: 32px;
-    
+/*padding-top: 32px; 
+padding-bottom: 32px;*/
+background-color: #F4F4FD ; 
+width: 100%;
+max-width: 1440px;
+margin: 0 auto;   /*  centre */  
     
  }
 
  .section-team {
-    background-color: #F4F4FD ; 
-    padding: 120px 0; 
+    
+    
     
   }
 
@@ -264,6 +254,7 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 text-transform: capitalize;
+padding-top: 120px;
 margin-bottom: 72px;
 
 
@@ -273,10 +264,12 @@ margin-bottom: 72px;
     display: flex;
     gap: 24px;
     width: calc(100%-3*24px); 
-   
-   
-   
-}
+    padding-bottom: 120px;
+   }
+
+   .team-photo {
+   margin-bottom: 32px;
+    }
 
 
 .team-title {
@@ -287,8 +280,6 @@ letter-spacing: 0.02em;
 color: #2E2F42;
 text-align: center;
 margin-bottom: 8px;
-
-
 }
 
 .paragraph-team {
@@ -387,17 +378,7 @@ padding: 100px 0;
 
 
 
-.logo {
-    color: #4D5AE5;
-    font-family: Raleway, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 16px;
-}
+
 
     a {
         text-decoration: none;
